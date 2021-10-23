@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Website Design Using HTML and CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <section id="header">
+
+        <div class="container">
+            <img class="logo" src="./assets/logo.png" alt="">
+            <div class="header-text">
+                <h1>The purpose is to <br>teach, bring learning to people</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, consequatur delectus odio molestiae voluptate facilis. Voluptatem velit quos explicabo ad, praesentium fugiat asperiores. Libero in rem pariatur vero at ex!</p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <img id="menuBtn" src="./assets/menu.png" alt="">
+
+<!-- about -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="./assets/about.png" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quisquam ea suscipit, perferendis dolor tempore laboriosam accusamus nemo. Nobis iste illum quibusdam fugit a, doloremque necessitatibus veniam unde illo vel laborum nisi molestiae quia mollitia dolores tenetur, quasi numquam harum.</p><br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+
+                <h2>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique autem odit adipisci!"</h2>
+                <h3>----Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+
+<!-- features -->
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="./assets/pic-1.png" alt="">
+                <h4>Learn Anywhere</h4>
+                <p>Switch between your computer, tablet or mobile device</p>
+            </div>
+            <div class="feature-col">
+                <img src="./assets/pic-2.png" alt="">
+                <h4>Expert Teachers</h4>
+                <p>Learn from industry experts who are passionate about teaching.</p>
+            </div>
+            <div class="feature-col">
+                <img src="./assets/pic-3.png" alt="">
+                <h4>Unlimted Access</h4>
+                <p>Choose what you'd like to learn from our extensive subcription library.</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <button class="common-btn">Star Free Trial</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else {
+                sideNav.style.right = "-250px"
+            }
+        }
+    </script>
+
+</body>
+</html>
